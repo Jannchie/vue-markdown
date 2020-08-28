@@ -2,9 +2,6 @@
   "name": "@jannchie/vue-markdown",
   "version": "1.0.0",
   "description": "A Powerful and Highspeed Markdown Parser for Vue",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "contributors": [
     {
       "name": "Jannchie",

@@ -1,8 +1,20 @@
-# vue-markdown
+# jannchie/vue-markdown
 
-[![npm](https://img.shields.io/npm/v/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
-[![npm](https://img.shields.io/npm/l/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
-[![npm](https://img.shields.io/npm/dt/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
+
+
+[![npm](https://img.shields.io/npm/v/@jannchie/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
+[![npm](https://img.shields.io/npm/l/@jannchie/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
+[![npm](https://img.shields.io/npm/dt/@jannchie/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
+
+---
+
+Forked from miaolz123/vue-markdown
+
+## What different
+
+Allows you to customize HTML tag name.
+
+---
 
 > If you want vue-markdown for `vue1.X.X`, please checkout [vue-markdown1.X.X](https://github.com/miaolz123/vue-markdown/tree/v1).
 
@@ -31,7 +43,7 @@ Supported Markdown Syntax:
 
 `*katex` need add [katex css](https://unpkg.com/katex/dist/katex.min.css).
 
-# Example
+## Example
 
 [simple](https://github.com/miaolz123/vue-markdown/blob/master/example/simple)
 
@@ -39,7 +51,7 @@ Supported Markdown Syntax:
 
 [Live Demo](https://miaolz123.github.io/vue-markdown/)
 
-# Installation
+## Installation
 
 ### Browser globals
 
@@ -71,7 +83,9 @@ $ npm install --save vue-markdown
 $ yarn add vue-markdown --save
 ```
 
-## CommonJS
+## Usage
+
+### CommonJS
 
 ```js
 var VueMarkdown = require('vue-markdown');
@@ -83,7 +97,7 @@ new Vue({
 })
 ```
 
-## ES6 (Vue-CLI users)
+### ES6 (Vue-CLI users)
 
 After installing via Yarn or NPM, use the following snippet in the script portion of the Vue component which you wish to render the Markdown.
 
@@ -97,7 +111,7 @@ new Vue({
 })
 ```
 
-# Slots
+## Slots
 
 ```html
 <vue-markdown>this is the default slot</vue-markdown>
@@ -109,63 +123,63 @@ VueMarkdown has a default slot which is used to write the `markdown` source.
 
 TIP: The default slot only renders **once** at the beginning, and it will overwrite the prop of `source`!
 
-# Props
+## Props
 
-| Prop | Type | Default | Describe |
-| ---- | ---- | ------- | ------- |
-| watches | Array | `["source", "show", "toc"]` | HTML refresh automatically when the prop in this array changed |
-| source | String | `null` | the markdown source code |
-| show | Boolean | `true` | enable render to the default slot automatically |
-| html | Boolean | `true` | enable HTML syntax in source |
-| xhtml-out | Boolean | `true` | `<br></br>` => `<br />` |
-| breaks | Boolean | `true` | `\n` => `<br>` |
-| linkify | Boolean | `true` | autoconvert URL-like text to link |
-| emoji | Boolean | `true` | `:)` => `😃` |
-| typographer | Boolean | `true` | enable some language-neutral replacement and quotes beautification |
-| lang-prefix | String | `language-` | CSS language prefix for fenced blocks |
-| quotes | String | `“”‘’` | use `“”‘’` for Chinese, `„“‚‘` for German, `«»„“` for Russian |
-| table-class | String | `table` | customize html class of the `<table>` |
-| task-lists | Boolean | `true` | enable GFM task list |
-| toc | Boolean | `false` | enable automatic table of contents |
-| toc-id | String | `undefined` | the HTML id to render TOC |
-| toc-class | String | `table` | customize html class of the `<ul>` wrapping the TOC |
-| toc-first-level | Number | `2` | use `2` if you want to skip `<h1>` from the TOC |
-| toc-last-level | Number | `'toc-first-level' + 1` | use `5` if you want to skip `<h6>` from the TOC |
-| toc-anchor-link | Boolean | `true` | enable the automatic anchor link in the headings |
-| toc-anchor-class | String | `toc-anchor` | customize the anchor class name |
-| toc-anchor-link-symbol | String | `#` | customize the anchor link symbol |
-| toc-anchor-link-space | Boolean | `true` | enable inserting a space between the anchor link and heading |
-| toc-anchor-link-class | String | `toc-anchor-link` | customize the anchor link symbol class name |
-| anchorAttributes | Object | `{}` | anchor tag attributes such as `target: '_blank'` or `rel: 'nofollow'` |
-| prerender | Function (String) String | `null` | filter function before markdown parse |
-| postrender | Function (String) String | `null` | filter function after markdown parse |
+| Prop                   | Type                     | Default                     | Describe                                                              |
+| ---------------------- | ------------------------ | --------------------------- | --------------------------------------------------------------------- |
+| watches                | Array                    | `["source", "show", "toc"]` | HTML refresh automatically when the prop in this array changed        |
+| source                 | String                   | `null`                      | the markdown source code                                              |
+| show                   | Boolean                  | `true`                      | enable render to the default slot automatically                       |
+| html                   | Boolean                  | `true`                      | enable HTML syntax in source                                          |
+| xhtml-out              | Boolean                  | `true`                      | `<br></br>` => `<br />`                                               |
+| breaks                 | Boolean                  | `true`                      | `\n` => `<br>`                                                        |
+| linkify                | Boolean                  | `true`                      | autoconvert URL-like text to link                                     |
+| emoji                  | Boolean                  | `true`                      | `:)` => `😃`                                                           |
+| typographer            | Boolean                  | `true`                      | enable some language-neutral replacement and quotes beautification    |
+| lang-prefix            | String                   | `language-`                 | CSS language prefix for fenced blocks                                 |
+| quotes                 | String                   | `“”‘’`                      | use `“”‘’` for Chinese, `„“‚‘` for German, `«»„“` for Russian         |
+| table-class            | String                   | `table`                     | customize html class of the `<table>`                                 |
+| task-lists             | Boolean                  | `true`                      | enable GFM task list                                                  |
+| toc                    | Boolean                  | `false`                     | enable automatic table of contents                                    |
+| toc-id                 | String                   | `undefined`                 | the HTML id to render TOC                                             |
+| toc-class              | String                   | `table`                     | customize html class of the `<ul>` wrapping the TOC                   |
+| toc-first-level        | Number                   | `2`                         | use `2` if you want to skip `<h1>` from the TOC                       |
+| toc-last-level         | Number                   | `'toc-first-level' + 1`     | use `5` if you want to skip `<h6>` from the TOC                       |
+| toc-anchor-link        | Boolean                  | `true`                      | enable the automatic anchor link in the headings                      |
+| toc-anchor-class       | String                   | `toc-anchor`                | customize the anchor class name                                       |
+| toc-anchor-link-symbol | String                   | `#`                         | customize the anchor link symbol                                      |
+| toc-anchor-link-space  | Boolean                  | `true`                      | enable inserting a space between the anchor link and heading          |
+| toc-anchor-link-class  | String                   | `toc-anchor-link`           | customize the anchor link symbol class name                           |
+| anchorAttributes       | Object                   | `{}`                        | anchor tag attributes such as `target: '_blank'` or `rel: 'nofollow'` |
+| prerender              | Function (String) String | `null`                      | filter function before markdown parse                                 |
+| postrender             | Function (String) String | `null`                      | filter function after markdown parse                                  |
 
-# Events
+## Events
 
-| Name | Param[Type] | Describe |
-| ---- | --------- | -------- |
-| rendered | outHtml[String] | dispatch when render finish |
+| Name         | Param[Type]     | Describe                                                                    |
+| ------------ | --------------- | --------------------------------------------------------------------------- |
+| rendered     | outHtml[String] | dispatch when render finish                                                 |
 | toc-rendered | tocHtml[String] | dispatch when TOC render finish, never dispatch if the toc[prop] is `false` |
 
-# Thanks
+## Thanks
 
-- [markdown-it](https://github.com/markdown-it/markdown-it)
-- [transtone](https://github.com/transtone)
-- [**brandonferens**](https://github.com/brandonferens)
+* [markdown-it](https://github.com/markdown-it/markdown-it)
+* [transtone](https://github.com/transtone)
+* [**brandonferens**](https://github.com/brandonferens)
 
-# Contributions
+## Contributions
 
-- [miaolz123](https://github.com/miaolz123)
-- [brandonferens](https://github.com/brandonferens)
-- [brianbancroft](https://github.com/brianbancroft)
-- [nikolasp](https://github.com/nikolasp)
-- [mbackonja](https://github.com/mbackonja)
-- [Endi1](https://github.com/Endi1)
-- [printscreen](https://github.com/printscreen)
-- [killix](https://github.com/killix)
-- [LeFnord](https://github.com/lefnord)
-- [FlorianWendelborn](https://github.com/FlorianWendelborn)
+* [miaolz123](https://github.com/miaolz123)
+* [brandonferens](https://github.com/brandonferens)
+* [brianbancroft](https://github.com/brianbancroft)
+* [nikolasp](https://github.com/nikolasp)
+* [mbackonja](https://github.com/mbackonja)
+* [Endi1](https://github.com/Endi1)
+* [printscreen](https://github.com/printscreen)
+* [killix](https://github.com/killix)
+* [LeFnord](https://github.com/lefnord)
+* [FlorianWendelborn](https://github.com/FlorianWendelborn)
 
-# License
+## License
 
 Copyright (c) 2016 [miaolz123](https://github.com/miaolz123) by [MIT](https://opensource.org/licenses/MIT)

@@ -1,6 +1,6 @@
 {
   "name": "@jannchie/vue-markdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Powerful and Highspeed Markdown Parser for Vue",
   "contributors": [
     {
@@ -16,8 +16,7 @@
     "src"
   ],
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "build": "webpack --config webpack.common.js",
+    "build": "webpack --config webpack.config.js",
     "test": "echo true"
   },
   "repository": {

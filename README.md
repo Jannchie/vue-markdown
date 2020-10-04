@@ -2,9 +2,10 @@
 
 
 
-[![npm](https://img.shields.io/npm/v/@jannchie/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
-[![npm](https://img.shields.io/npm/l/@jannchie/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
-[![npm](https://img.shields.io/npm/dt/@jannchie/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)
+[![npm](https://img.shields.io/npm/v/@jannchie/vue-markdown.svg?style=flat-square)](https://www.npmjs.com/package/vue-markdown)
+[![npm](https://img.shields.io/npm/l/@jannchie/vue-markdown.svg?style=flat-square)](https://www.npmjs.com/package/vue-markdown)
+[![npm](https://img.shields.io/npm/dt/@jannchie/vue-markdown.svg?style=flat-square)](https://www.npmjs.com/package/vue-markdown)
+[![](https://data.jsdelivr.com/v1/package/npm/@jannchie/vue-markdown/badge)](https://www.jsdelivr.com/package/npm/@jannchie/vue-markdown)
 
 ---
 
